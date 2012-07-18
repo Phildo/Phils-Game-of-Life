@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>The Game of Phil</title>
+<link rel="stylesheet" type="text/css/" href="index.css"></link>
+<script type="text/javascript" src="jGameFrame/jquery.js"></script>
+<script type="text/javascript" src="jGameFrame/keyCodes.js"></script>
+<script type="text/javascript" src="jGameFrame/canvas.js"></script>
+<script type="text/javascript" src="jGameFrame/events.js"></script>
+<script type="text/javascript" src="jGameFrame/game.js"></script>
+<script type="text/javascript">
+var load = function()
+{
+  initCanvas("canv");
+  initGame();
+}
+
+$(document).ready(load);
+</script>
+</head>
+<body>
+<canvas id="canv" style="border:2px solid #000000; position:absolute; top:10; left:10;">Yo dawg! Get a new browser G!</canvas>
+
+<div id="controls" style="border:2px solid #000000; background-color:#FFFFFF; position:absolute; bottom:20; left:20;">
+  <span id="play" onmousedown="mouseDown('play')" onmouseup="mouseUp('play')">&nbsp;play</span>
+  <span id="pause" onmousedown="mouseDown('pause')" onmouseup="mouseUp('pause')">&nbsp;pause</span>
+  <br />
+  &nbsp;fade 
+  <span id="fade_off" onmousedown="mouseDown('fade_off')" onmouseup="mouseUp('fade_off')">&nbsp;off</span>
+  <span id="fade_on" onmousedown="mouseDown('fade_on')" onmouseup="mouseUp('fade_on')">on</span>
+  <br />
+  &nbsp;size 
+  <span id="size_m" onmousedown="mouseDown('size_m')" onmouseup="mouseUp('size_m')">&nbsp;-</span>
+  <span id="size_p" onmousedown="mouseDown('size_p')" onmouseup="mouseUp('size_p')">+</span>
+  <br />
+  &nbsp;speed 
+  <span id="speed_m" onmousedown="mouseDown('speed_m')" onmouseup="mouseUp('speed_m')">-</span>
+  <span id="speed_p" onmousedown="mouseDown('speed_p')" onmouseup="mouseUp('speed_p')">+</span>
+  <br />
+  <span id="clear" onmousedown="mouseDown('clear')" onmouseup="mouseUp('clear')">&nbsp;clear</span>
+</div>
+<div id="debug" style="border:2px solid #000000; background-color:#FFFFFF; position:absolute; bottom:20; right:20;">
+  &nbsp;X
+  <span id="x_m" onmousedown="mouseDown('x_m')" onmouseup="mouseUp('x_m')">-</span>
+  <span id="watch_x">0</span>
+  <span id="x_p" onmousedown="mouseDown('x_p')" onmouseup="mouseUp('x_p')">+</span>
+  <br />
+  &nbsp;Y
+  <span id="y_m" onmousedown="mouseDown('y_m')" onmouseup="mouseUp('y_m')">-</span>
+  <span id="watch_y">0</span>
+  <span id="y_p" onmousedown="mouseDown('y_p')" onmouseup="mouseUp('y_p')">+</span>
+  <br />
+  <br />
+  &nbsp;S:
+  <span id="watch_s">clear</span>
+  <br />
+  &nbsp;N:
+  <span id="watch_n">0</span>
+</div>
+</body>
+</html>
