@@ -331,6 +331,14 @@ function clearCells()
       cells[i][j].clear();
 }
 
+function shuffleCells(probability)
+{
+  clearCells();
+  for(var i = 0; i < gridX; i++)
+    for(var j = 0; j < gridY; j++)
+      if(Math.random() < probability) cells[i][j].set();
+}
+
 function processNextMove()
 {
   for(var i = 0; i < gridX; i++)
@@ -430,6 +438,9 @@ function mouseDown(id)
     case "clear":
       clearCells();
       break;
+    case "shuffle":
+      shuffleCells(0.25);
+      break;
 
     case "x_p":
       incWatchX();
@@ -463,6 +474,10 @@ function mouseUp(id)
     case "speed_m":
       speedDown = false;
     break;
+
+    case "git":
+      window.open("https://github.com/Phildo/Phils-Game-of-Life");
+      break;
   }
 }
 
