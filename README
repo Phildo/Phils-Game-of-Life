@@ -1,0 +1,15 @@
+This is a very, very basic implementation of Conway's Game of Life. If you are unfamiliar with CGoL, I reccomend checking it out! http://en.wikipedia.org/wiki/Conway's_Game_of_Life
+It *might* still be up on phildogames.com/games/PGOL if you'd like to give it a try.
+
+This uses javascript canvas, which might not run on all browsers. I just kinda made this for fun, and have only tested it in chrome. 
+It *should* adapt to any screen sizes, so it might even work on smartphone's 'n such! However, this isn't exactly the most optimized code in the world... so if you zoom out too far and go too fast it might slow things down...
+
+You can use either the mouse or the arrow keys to navigate the cells, and either click or press the space bar to manually activate/deactivate selected cells. Other than that, the buttons should be pretty self explanatory.
+
+My reccomendation for maximum enjoyment:
+1. Zoom out all the way.
+2. Speed up all the way.
+3. Turn fade on.
+4. Be mezmerized.
+
+Feel free to steal this code and make millions of dollars.
