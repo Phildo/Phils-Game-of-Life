@@ -88,6 +88,19 @@ function draw()
             setColor("#f0f0f0");
             break;
           case 2:
+            setColor("#c0c0c0");
+            break;
+          case 3:
+            setColor("#808080");
+            break;
+          case 4:
+            setColor("#404040");
+            break;
+        /*
+          case 1:
+            setColor("#f0f0f0");
+            break;
+          case 2:
             setColor("#e0e0e0");
             break;
           case 3:
@@ -132,6 +145,7 @@ function draw()
           case 16:
             setColor("#000000");
             break;
+        */
         }
         context.fillRect((i*cellSize)+cellPadding, (j*cellSize)+cellPadding, cellSize-(2*cellPadding), cellSize-(2*cellPadding));
       }
